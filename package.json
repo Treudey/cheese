@@ -1,0 +1,32 @@
+{
+  "name": "cheese",
+  "version": "1.0.0",
+  "description": "A food app that lets users input the names of cheeses they'd like to eat.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Treudey/cheese.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "handlebars",
+    "express",
+    "mySQL",
+    "bootstrap"
+  ],
+  "author": "Alex Treude",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Treudey/cheese/issues"
+  },
+  "homepage": "https://github.com/Treudey/cheese#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mysql": "^2.17.1"
+  }
+}

@@ -1,0 +1,11 @@
+DROP DATABASE IF EXISTS cheese_db;
+CREATE DATABASE cheese_db;
+
+USE cheese_db;
+
+CREATE TABLE cheeses (
+	id INTEGER(10) NOT NULL AUTO_INCREMENT,
+	cheese_name VARCHAR(30) NOT NULL,
+    devoured BOOLEAN DEFAULT 0,
+    PRIMARY KEY (id)
+);
