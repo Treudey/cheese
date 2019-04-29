@@ -40,7 +40,7 @@ const orm = {
     },
     insertOne: function(table, col, val) {
         return new Promise((resolve, reject) => {
-            const queryString = `INSERT INTO ${table} (${col}) VALUES (${val}) `;
+            const queryString = `INSERT INTO ${table} (${col}) VALUES ("${val}");`;
 
             console.log(queryString);
 

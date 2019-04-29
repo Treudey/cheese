@@ -4,7 +4,7 @@ const cheese = require('../models/cheese');
 
 const router = express.Router();
 
-router.get(async (req, res) => {
+router.get('/', async (req, res) => {
     data = await cheese.selectAllCheeses();
     const hbsObject = {
         cheeses: data
@@ -15,7 +15,7 @@ router.get(async (req, res) => {
 
 
 router.post("/api/cheese", async (req, res) => {
-    await cheese.insertCheese("name", req.body.cheese); 
+    await cheese.insertCheese("cheese_name", req.body.cheese); 
     
     res.end();
 });

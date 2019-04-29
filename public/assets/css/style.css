@@ -1,0 +1,95 @@
+body {
+    background-color: #ffc400;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cheese-img {
+    width: 15rem;
+    margin-bottom: .75rem;
+}
+
+.page-title {
+    color: #f02f0d;
+    font-size: 2.5rem;
+    font-family: 'Coustard', serif;
+    margin-bottom: 1.5rem;
+}
+
+.cheese-div,
+.devoured-div {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.cheese-div {
+    width: 45%;
+    text-align: right;
+}
+
+.devoured-div {
+    vertical-align: top;
+    width: 40%;
+    margin-left: 1.5rem;
+}
+
+.cheese-div_text {
+    display: inline-block;
+    background-color: #d3a936;
+    line-height: 3.5rem;
+    text-align: center;
+    margin: 0 1rem 1rem 0;
+    width: 17rem;
+    height: 3.5rem;
+    border: 1px solid #0a0a0a;
+}
+
+.eat-cheese {
+    display: inline-block;
+    font-family: inherit;
+    height: 2rem;
+}
+
+.devoured-div_text {
+    background-color: #ffda62;
+    color: #9b9b9b;
+    line-height: 2rem;
+    width: 17rem;
+    height: 2rem;
+    margin-bottom: .5rem;
+    border: 1px solid #b6b6b6;
+}
+
+#cheese-name_label {
+    margin-bottom: .5rem;
+    display: block;
+}
+
+#cheese-name {
+    color: #c5900b;
+    width: 21.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+    display: block;
+    margin: 0 auto .5rem;
+}
+
+.add-btn {
+   display: block;
+   margin: 0 auto 1rem;
+   color: whitesmoke;
+   font-family: 'Coustard', serif;;
+   height: 2.2rem;
+   width: 4rem;
+   border: 1px outset grey;
+   border-radius: 10%;
+   background-color: #f02f0d;
+}
+
+.add-btn:active {
+    border-style: inset;
+}
+.add-btn:hover {
+    cursor: pointer;
+}
