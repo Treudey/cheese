@@ -1,4 +1,3 @@
-// Import MySQL connection.
 const connection = require('./connection');
 
 // Helper function to convert object key/value pairs to SQL syntax
@@ -14,8 +13,6 @@ function objToSql(ob) {
         if (typeof value === "string" && value.indexOf(" ") >= 0) {
           value = "'" + value + "'";
         }
-        // e.g. {name: 'Lana Del Grey'} => ["name='Lana Del Grey'"]
-        // e.g. {sleepy: true} => ["sleepy=true"]
         arr.push(key + "=" + value);
       }
     }
@@ -54,12 +51,7 @@ const orm = {
     },
     updateOne: function(table, objColVals, condition) {
         return new Promise((resolve, reject) => {
-            let queryString = "UPDATE " + table;
-
-            queryString += " SET ";
-            queryString += objToSql(objColVals);
-            queryString += " WHERE ";
-            queryString += condition;
+            let queryString = `UPDATE ${table} SET ${objToSql(objColVals)} WHERE ${condition};`;
 
             console.log(queryString);
             connection.query(queryString, (err, result) => {

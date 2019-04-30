@@ -62,6 +62,7 @@ body {
 }
 
 #cheese-name_label {
+    color: #0044ff;
     margin-bottom: .5rem;
     display: block;
 }
@@ -82,7 +83,7 @@ body {
    font-family: 'Coustard', serif;;
    height: 2.2rem;
    width: 4rem;
-   border: 1px outset grey;
+   border: 1px outset #808080;
    border-radius: 10%;
    background-color: #f02f0d;
 }

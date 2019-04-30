@@ -4,6 +4,7 @@ const cheese = require('../models/cheese');
 
 const router = express.Router();
 
+// Main page route
 router.get('/', async (req, res) => {
     data = await cheese.selectAllCheeses();
     const hbsObject = {
@@ -13,13 +14,14 @@ router.get('/', async (req, res) => {
     res.render("index", hbsObject);
 });
 
-
+// Form data posting route
 router.post("/api/cheese", async (req, res) => {
     await cheese.insertCheese("cheese_name", req.body.cheese); 
     
     res.end();
 });
 
+// Database updating route
 router.put("/api/cheese/:id", async (req, res) => {
     const condition = "id = " + req.params.id;
 
