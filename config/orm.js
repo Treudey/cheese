@@ -2,11 +2,11 @@ const connection = require('./connection');
 
 // Helper function to convert object key/value pairs to SQL syntax
 function objToSql(ob) {
-    var arr = [];
+    let arr = [];
   
     // loop through the keys and push the key/value as a string int arr
-    for (var key in ob) {
-      var value = ob[key];
+    for (let key in ob) {
+      let value = ob[key];
       // check to skip hidden properties
       if (Object.hasOwnProperty.call(ob, key)) {
         // if string with spaces, add quotations (Lana Del Grey => 'Lana Del Grey')
