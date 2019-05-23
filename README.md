@@ -6,10 +6,10 @@ Eat-Da-Cheese! is a food app that lets users eat all their favourite cheeses!
 * Each cheese in the waiting area also has a `Devour it!` button. 
 * When the user clicks it, the cheese will move to the right side of the page. This app will store every cheese in a database and whether its been devoured or not.
 
-## Live Site
+### Live Site
 https://cryptic-bastion-59271.herokuapp.com/
 
-## Technologies and Frameworks
+### Technologies and Frameworks
 * Node.js
 * Express
 * Handlebars
@@ -22,10 +22,10 @@ https://cryptic-bastion-59271.herokuapp.com/
 * HTML
 * CSS
 
-## Author
-* **Alex Treude**  [Treudey](https://github.com/Treudey)
+### Author
+**Alex Treude**  [Treudey](https://github.com/Treudey)
 
-## License
+### License
 MIT
 
 
